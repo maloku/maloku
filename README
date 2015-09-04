@@ -1,6 +1,3 @@
 Read me!
 
-pg_locks view
-Looking at pg_locks shows you what locks are granted and what processes are waiting for locks to be acquired. A good query to start looking for lock problems:
 
-SELECT relation::regclass, * FROM pg_locks WHERE NOT granted;
